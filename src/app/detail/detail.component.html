@@ -1,0 +1,40 @@
+<div class="main">
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>#</th>
+                <th>no pipe</th>
+                <th>pipe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th></th>
+                <td>{{text}}</td>
+                <td>{{text | upperCase}}</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>{{text}}</td>
+                <td>{{text | txtTitle :0 :100}}</td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td>{{number}}</td>
+                <td>{{number | take: 'odd'}}</td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td><input type="text"></td>
+                <td><input type="text" oninput="this.value = this.value.toUpperCase();"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>#</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
